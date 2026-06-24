@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>From Idea to Launch — Consulting Packages</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a0f;
+    --bg-card: #111118;
+    --bg-card-hover: #16161f;
+    --border: rgba(255,255,255,0.08);
+    --border-accent: rgba(255,255,255,0.15);
+    --accent: #6c63ff;
+    --accent-soft: rgba(108,99,255,0.12);
+    --accent-glow: rgba(108,99,255,0.25);
+    --text-primary: #f0f0f5;
+    --text-secondary: #8b8b9e;
+    --text-tertiary: #5a5a6e;
+    --check: #4ade80;
+    --check-bg: rgba(74,222,128,0.08);
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* NAV */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 2.5rem;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background: rgba(10,10,15,0.92);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+  }
+  .nav-logo {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+  .nav-logo span { color: var(--accent); }
+  .nav-back {
+    font-size: 13px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s;
+  }
+  .nav-back:hover { color: var(--text-primary); }
+  .nav-back::before { content: '←'; font-size: 14px; }
+
+  /* HERO */
+  .hero {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 5rem 2rem 3.5rem;
+    text-align: center;
+  }
+  .hero-eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid rgba(108,99,255,0.2);
+    border-radius: 100px;
+    padding: 4px 14px;
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+  }
+  .hero p {
+    font-size: 17px;
+    color: var(--text-secondary);
+    max-width: 520px;
+    margin: 0 auto;
+    font-weight: 300;
+  }
+
+  /* SECTION WRAPPER */
+  .section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+  }
+
+  /* SECTION LABEL */
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    margin-bottom: 1.25rem;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* DISCOVERY */
+  .discovery {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .discovery::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0.6;
+  }
+  .disc-step {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+  }
+  .disc-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.3rem;
+  }
+  .disc-subtitle {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+  }
+  .disc-credit {
+    display: inline-block;
+    font-size: 11px;
+    background: var(--check-bg);
+    color: var(--check);
+    border: 1px solid rgba(74,222,128,0.15);
+    border-radius: 100px;
+    padding: 3px 12px;
+    margin-bottom: 1.25rem;
+  }
+  .disc-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .disc-tag {
+    font-size: 12px;
+    color: var(--text-secondary);
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 5px 12px;
+  }
+  .disc-outcome {
+    min-width: 200px;
+    border-left: 1px solid var(--border);
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .disc-outcome-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    margin-bottom: 0.75rem;
+  }
+  .disc-outcome p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  /* PACKAGES GRID */
+  .packages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 3rem;
+  }
+  .pkg {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.75rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.2s, background 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .pkg:hover { background: var(--bg-card-hover); border-color: var(--border-accent); }
+  .pkg.featured {
+    border-color: rgba(108,99,255,0.4);
+    background: linear-gradient(160deg, #111118 0%, #13121e 100%);
+  }
+  .pkg.featured::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0.8;
+  }
+  .pkg-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid rgba(108,99,255,0.25);
+    border-radius: 100px;
+    padding: 3px 10px;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+  }
+  .pkg-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 18px;
+  }
+  .pkg.featured .pkg-icon {
+    background: var(--accent-soft);
+    border-color: rgba(108,99,255,0.25);
+  }
+  .pkg-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.2rem;
+  }
+  .pkg-price-from {
+    font-size: 11px;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .pkg-price {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.2rem;
+    letter-spacing: -0.02em;
+  }
+  .pkg-desc {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    margin-bottom: 1.5rem;
+    flex-shrink: 0;
+  }
+  .pkg-divider {
+    height: 1px;
+    background: var(--border);
+    margin-bottom: 1.25rem;
+  }
+  .features {
+    list-style: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .features li {
+    font-size: 12.5px;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .features li:last-child { border-bottom: none; }
+  .feat-check {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--check-bg);
+    border: 1px solid rgba(74,222,128,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 9px;
+    color: var(--check);
+  }
+  .feat-no {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .feat-no::after {
+    content: '';
+    width: 8px;
+    height: 1px;
+    background: var(--text-tertiary);
+    opacity: 0.4;
+    display: block;
+  }
+  .feat-text-yes { color: var(--text-secondary); }
+  .feat-text-no { color: var(--text-tertiary); opacity: 0.5; }
+
+  /* ONGOING */
+  .ongoing {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.75rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3.5rem;
+  }
+  .ongoing-left { display: flex; align-items: center; gap: 1rem; }
+  .ongoing-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: var(--accent-soft);
+    border: 1px solid rgba(108,99,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .ongoing-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+  }
+  .ongoing-desc {
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+  .ongoing-price {
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .ongoing-price-from {
+    font-size: 11px;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .ongoing-price-amount {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+  }
+  .ongoing-price-per {
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2.5rem 2rem;
+    text-align: center;
+  }
+  .footer-tagline {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 0.4rem;
+  }
+  .footer-tagline strong { color: var(--text-primary); }
+  .footer-sub {
+    font-size: 13px;
+    color: var(--text-tertiary);
+    max-width: 520px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+  }
+  .footer-link {
+    font-size: 13px;
+    color: var(--text-tertiary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-link:hover { color: var(--text-secondary); }
+
+  /* CTA */
+  .cta-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 24px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 10px;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: opacity 0.2s;
+  }
+  .cta-btn:hover { opacity: 0.85; }
+
+  /* RESPONSIVE */
+  @media (max-width: 700px) {
+    .packages { grid-template-columns: 1fr; }
+    .discovery { grid-template-columns: 1fr; }
+    .disc-outcome { border-left: none; padding-left: 0; border-top: 1px solid var(--border); padding-top: 1.25rem; }
+    nav { padding: 1rem 1.25rem; }
+    .hero { padding: 3rem 1.25rem 2.5rem; }
+    .section { padding: 0 1.25rem 3rem; }
+    .ongoing { flex-direction: column; align-items: flex-start; }
+    .ongoing-price { text-align: left; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://www.horizontech.com.mx/" class="nav-logo">Horizon<span>AI</span></a>
+  <a href="https://www.horizontech.com.mx/" class="nav-back">Back to site</a>
+</nav>
+
+<div class="hero">
+  <span class="hero-eyebrow">Consulting packages</span>
+  <h1>From idea to launch</h1>
+  <p>Helping founders turn ideas into scalable businesses — from naming and branding to software and AI.</p>
+</div>
+
+<div class="section">
+
+  <!-- STEP 1 -->
+  <div class="section-label">Step 1 — Start here</div>
+  <div class="discovery">
+    <div>
+      <p class="disc-step">Discovery & strategy session</p>
+      <h2 class="disc-title">Validate your idea before you build</h2>
+      <p class="disc-subtitle">A focused session to understand your market, define your audience, and map the right path forward.</p>
+      <span class="disc-credit">✓ $250 USD — credited toward any package</span>
+
+      <div class="disc-tags">
+        <span class="disc-tag">Business concept review</span>
+        <span class="disc-tag">Market & competitor analysis</span>
+        <span class="disc-tag">Target audience definition</span>
+        <span class="disc-tag">Revenue model discussion</span>
+        <span class="disc-tag">Tech recommendations</span>
+        <span class="disc-tag">Launch roadmap</span>
+      </div>
+    </div>
+    <div class="disc-outcome">
+      <p class="disc-outcome-label">Outcome</p>
+      <p>A clear action plan and recommendation for the best path forward.</p>
+    </div>
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="section-label">Step 2 — Choose your build path</div>
+  <div class="packages">
+
+    <!-- LAUNCH -->
+    <div class="pkg">
+      <div class="pkg-icon">🚀</div>
+      <p class="pkg-price-from">Starting at</p>
+      <p class="pkg-price">$2,000 <span style="font-size:14px;font-weight:400;color:var(--text-tertiary);">USD</span></p>
+      <p class="pkg-name">Launch</p>
+      <p class="pkg-desc">Build a professional brand and establish your online presence.</p>
+      <div class="pkg-divider"></div>
+      <ul class="features">
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Brand strategy</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Naming & identity</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Logo & visual brand</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Landing page</span></li>
+        <li><span class="feat-no"></span><span class="feat-text-no">Website</span></li>
+        <li><span class="feat-no"></span><span class="feat-text-no">CRM & lead systems</span></li>
+        <li><span class="feat-no"></span><span class="feat-text-no">Business automation</span></li>
+        <li><span class="feat-no"></span><span class="feat-text-no">Analytics dashboard</span></li>
+        <li><span class="feat-no"></span><span class="feat-text-no">Product strategy</span></li>
+        <li><span class="feat-no"></span><span class="feat-text-no">Web / mobile app</span></li>
+        <li><span class="feat-no"></span><span class="feat-text-no">AI & advanced automation</span></li>
+        <li><span class="feat-no"></span><span class="feat-text-no">Custom integrations</span></li>
+        <li><span class="feat-no"></span><span class="feat-text-no">Growth consulting</span></li>
+      </ul>
+    </div>
+
+    <!-- BUILD -->
+    <div class="pkg featured">
+      <span class="pkg-badge">Most popular</span>
+      <div class="pkg-icon">🏗️</div>
+      <p class="pkg-price-from">Starting at</p>
+      <p class="pkg-price">$5,000 <span style="font-size:14px;font-weight:400;color:var(--text-tertiary);">USD</span></p>
+      <p class="pkg-name">Build</p>
+      <p class="pkg-desc">Create the systems and infrastructure needed to generate and manage growth.</p>
+      <div class="pkg-divider"></div>
+      <ul class="features">
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Brand strategy</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Naming & identity</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Logo & visual brand</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Landing page</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Website</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">CRM & lead systems</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Business automation</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Analytics dashboard</span></li>
+        <li><span class="feat-no"></span><span class="feat-text-no">Product strategy</span></li>
+        <li><span class="feat-no"></span><span class="feat-text-no">Web / mobile app</span></li>
+        <li><span class="feat-no"></span><span class="feat-text-no">AI & advanced automation</span></li>
+        <li><span class="feat-no"></span><span class="feat-text-no">Custom integrations</span></li>
+        <li><span class="feat-no"></span><span class="feat-text-no">Growth consulting</span></li>
+      </ul>
+    </div>
+
+    <!-- SCALE -->
+    <div class="pkg">
+      <div class="pkg-icon">📈</div>
+      <p class="pkg-price-from">Starting at</p>
+      <p class="pkg-price">$15,000 <span style="font-size:14px;font-weight:400;color:var(--text-tertiary);">USD</span></p>
+      <p class="pkg-name">Scale</p>
+      <p class="pkg-desc">Develop the technology, automation, and processes required for long-term expansion.</p>
+      <div class="pkg-divider"></div>
+      <ul class="features">
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Brand strategy</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Naming & identity</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Logo & visual brand</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Landing page</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Website</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">CRM & lead systems</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Business automation</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Analytics dashboard</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Product strategy</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Web / mobile app</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">AI & advanced automation</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Custom integrations</span></li>
+        <li><span class="feat-check">✓</span><span class="feat-text-yes">Growth consulting</span></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- ONGOING -->
+  <div class="ongoing">
+    <div class="ongoing-left">
+      <div class="ongoing-icon">🔁</div>
+      <div>
+        <p class="ongoing-title">Ongoing support</p>
+        <p class="ongoing-desc">Monthly advisory, growth consulting, automation improvements, and technical support.</p>
+      </div>
+    </div>
+    <div class="ongoing-price">
+      <p class="ongoing-price-from">Starting at</p>
+      <span class="ongoing-price-amount">$500 USD</span>
+      <span class="ongoing-price-per"> / month</span>
+    </div>
+  </div>
+
+  <!-- JOINT VENTURE BANNER -->
+  <div class="jv-banner">
+    <div class="jv-left">
+      <span class="jv-eyebrow">Joint venture</span>
+      <p class="jv-title">Building something big? Let's build it together.</p>
+      <p class="jv-desc">For founders with strong ideas and high growth potential, I offer reduced rates in exchange for a minority equity stake. You get senior product, tech, and strategy expertise from day one — without the full upfront cost.</p>
+    </div>
+    <div class="jv-cta">
+      <a href="mailto:josh@horizontech.com.mx?subject=Joint%20Venture%20Enquiry" class="jv-btn">Let's talk equity →</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p class="footer-tagline"><strong>One partner. One process. One roadmap.</strong></p>
+  <p class="footer-sub">From naming and branding to websites, automation, software, and AI solutions — everything designed to help launch and grow your business efficiently.</p>
+  <a href="mailto:josh@horizontech.com.mx" class="cta-btn">Get in touch</a>
+  <br><br>
+  <a href="https://www.horizontech.com.mx/" class="footer-link">← Back to HorizonAI</a>
+</footer>
+
+</body>
+</html>
