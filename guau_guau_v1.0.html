@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<!-- saved from url=(0263)file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#inversion -->
+<html lang="es-MX"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Guau Guau · Propuesta de Desarrollo, Inversión y Participación</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./guau_guau_v1.0_files/css2" rel="stylesheet">
+<style>
+:root{
+  --amarillo:#F5C800; --azul:#1B6CA8; --azul-medio:#5BB8F5; --azul-palido:#EBF4FF;
+  --crema:#FFF7D6; --oscuro:#1B2A3B; --gris:#5A6B7D; --linea:#D9E4F0; --blanco:#FFFFFF;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:'Nunito',system-ui,-apple-system,sans-serif;color:var(--oscuro);background:var(--crema);line-height:1.65;font-size:16px}
+h1,h2,h3,h4{font-family:'Fredoka','Nunito',sans-serif;font-weight:600;line-height:1.2;color:var(--azul)}
+a{color:var(--azul)}
+.wrap{max-width:1060px;margin:0 auto;padding:0 28px}
+
+/* ---------- Portada ---------- */
+.hero{background:var(--amarillo);padding:72px 0 64px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-90px;bottom:-90px;width:340px;height:340px;border-radius:50%;background:rgba(27,108,168,.10)}
+.hero-inner{position:relative;z-index:1}
+.mark{display:inline-flex;align-items:center;gap:12px;background:var(--azul);color:var(--amarillo);padding:8px 20px;border-radius:99px;font-family:'Fredoka';font-size:1.05rem;letter-spacing:.5px}
+.hero h1{font-size:3.4rem;margin:26px 0 10px;color:var(--azul);max-width:16ch}
+.hero .slogan{font-size:1.25rem;color:var(--azul);opacity:.85;font-weight:700}
+.hero-meta{display:flex;flex-wrap:wrap;gap:34px;margin-top:38px;padding-top:26px;border-top:2px solid rgba(27,108,168,.25)}
+.hero-meta div{font-size:.9rem;color:var(--azul)}
+.hero-meta strong{display:block;font-family:'Fredoka';font-size:1.05rem;margin-top:2px}
+.confid{margin-top:26px;display:inline-block;background:rgba(27,42,59,.85);color:var(--crema);font-size:.75rem;letter-spacing:1.4px;text-transform:uppercase;padding:6px 14px;border-radius:6px}
+
+/* ---------- Nav ---------- */
+nav{background:var(--azul);position:sticky;top:0;z-index:50;box-shadow:0 2px 14px rgba(27,42,59,.18)}
+nav ul{display:flex;flex-wrap:wrap;list-style:none;max-width:1060px;margin:0 auto;padding:0 22px}
+nav a{display:block;padding:13px 14px;color:var(--crema);text-decoration:none;font-size:.83rem;font-weight:700;letter-spacing:.3px}
+nav a:hover{background:rgba(255,255,255,.14);color:var(--amarillo)}
+
+/* ---------- Secciones ---------- */
+section{padding:58px 0;border-bottom:1px solid var(--linea);scroll-margin-top:64px}
+section:nth-of-type(even){background:var(--blanco)}
+.eyebrow{display:inline-block;background:var(--azul-palido);color:var(--azul);font-size:.72rem;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;padding:5px 12px;border-radius:5px;margin-bottom:14px}
+section h2{font-size:2.05rem;margin-bottom:8px}
+.lede{font-size:1.08rem;color:var(--gris);max-width:70ch;margin-bottom:30px}
+h3{font-size:1.3rem;margin:32px 0 12px}
+p{margin-bottom:14px;max-width:78ch}
+ul,ol{margin:0 0 16px 22px}
+li{margin-bottom:7px}
+
+/* ---------- Componentes ---------- */
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.card{background:var(--blanco);border:1px solid var(--linea);border-radius:14px;padding:22px}
+section:nth-of-type(even) .card{background:var(--azul-palido);border-color:#cfe1f5}
+.stat{background:var(--azul);color:var(--crema);border-radius:14px;padding:20px}
+.stat .n{font-family:'Fredoka';font-size:1.85rem;color:var(--amarillo);line-height:1.1}
+.stat .l{font-size:.82rem;opacity:.9;margin-top:5px}
+
+table{width:100%;border-collapse:collapse;margin:14px 0 22px;font-size:.92rem;background:var(--blanco)}
+th{background:var(--azul);color:var(--crema);text-align:left;padding:11px 13px;font-family:'Fredoka';font-weight:500;font-size:.86rem}
+td{padding:10px 13px;border-bottom:1px solid var(--linea);vertical-align:top}
+tbody tr:nth-child(even){background:#FBFDFF}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.total td{background:var(--amarillo);font-weight:800;color:var(--oscuro);border-bottom:none}
+tr.sub td{background:var(--crema);font-weight:700}
+caption{caption-side:bottom;text-align:left;font-size:.8rem;color:var(--gris);padding-top:8px}
+
+.fase{background:var(--blanco);border:1px solid var(--linea);border-left:7px solid var(--amarillo);border-radius:12px;padding:24px;margin-bottom:18px}
+section:nth-of-type(even) .fase{background:var(--azul-palido)}
+.fase-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:6px}
+.fase-head h3{margin:0;font-size:1.28rem}
+.chip{background:var(--azul);color:var(--crema);font-size:.75rem;font-weight:800;padding:4px 11px;border-radius:99px;white-space:nowrap}
+.chip.alt{background:var(--amarillo);color:var(--oscuro)}
+.fase-meta{display:flex;flex-wrap:wrap;gap:26px;margin:14px 0 4px;padding-top:14px;border-top:1px dashed var(--linea)}
+.fase-meta span{font-size:.8rem;color:var(--gris)}
+.fase-meta b{display:block;font-family:'Fredoka';font-size:1.02rem;color:var(--azul)}
+
+.callout{background:var(--crema);border:2px dashed var(--amarillo);border-radius:14px;padding:26px;margin:22px 0}
+.callout.azul{background:var(--azul-palido);border-color:var(--azul-medio)}
+.callout h3{margin-top:0}
+.ph-list{border:1px solid var(--linea);border-radius:12px;overflow:hidden;background:var(--blanco);margin:16px 0 8px}
+.ph-row{display:flex;align-items:center;gap:16px;padding:16px 20px;border-bottom:1px solid var(--linea)}
+.ph-row:last-child{border-bottom:none}
+.ph-row:nth-child(even){background:#FBFDFF}
+.ph-num{flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:var(--azul-palido);color:var(--azul);display:flex;align-items:center;justify-content:center;font-family:'Fredoka';font-size:.85rem}
+.ph-body{flex:1 1 auto;min-width:0}
+.ph-body b{display:block;font-family:'Fredoka';font-weight:500;color:var(--azul);font-size:1rem;line-height:1.3}
+.ph-body span{font-size:.83rem;color:var(--gris)}
+.ph-tag{flex:0 0 auto;background:var(--crema);color:var(--gris);border:1px solid var(--linea);font-size:.68rem;font-weight:800;letter-spacing:.8px;text-transform:uppercase;padding:5px 11px;border-radius:99px;white-space:nowrap}
+@media(max-width:640px){.ph-row{flex-wrap:wrap;gap:10px}.ph-tag{order:3}}
+
+.opt{border:2px solid var(--linea);border-radius:14px;padding:22px;background:var(--blanco)}
+.opt.rec{border-color:var(--amarillo);box-shadow:0 6px 22px rgba(245,200,0,.28)}
+.opt h4{font-size:1.15rem;margin-bottom:4px}
+.opt .eq{font-family:'Fredoka';font-size:2.3rem;color:var(--azul);line-height:1}
+.opt .eqlbl{font-size:.78rem;color:var(--gris);margin-bottom:14px}
+.opt dl{display:grid;grid-template-columns:1fr auto;gap:6px 10px;font-size:.88rem;margin-top:10px}
+.opt dt{color:var(--gris)}
+.opt dd{font-weight:800;text-align:right;font-variant-numeric:tabular-nums}
+.badge-rec{display:inline-block;background:var(--amarillo);color:var(--oscuro);font-size:.68rem;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin-bottom:8px}
+
+.bar{display:flex;height:34px;border-radius:8px;overflow:hidden;margin:10px 0 6px;font-size:.72rem;font-weight:800}
+.bar div{display:flex;align-items:center;justify-content:center;color:var(--blanco);white-space:nowrap}
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:.8rem;color:var(--gris);margin-bottom:20px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+
+.timeline{position:relative;margin:26px 0 8px;padding-left:28px;border-left:3px solid var(--amarillo)}
+.tl-item{position:relative;margin-bottom:20px}
+.tl-item::before{content:"";position:absolute;left:-36px;top:5px;width:15px;height:15px;border-radius:50%;background:var(--azul);border:3px solid var(--crema)}
+.tl-item b{font-family:'Fredoka';color:var(--azul)}
+.tl-item span{display:block;font-size:.88rem;color:var(--gris)}
+
+footer{background:var(--oscuro);color:var(--crema);padding:46px 0 34px}
+footer h3{color:var(--amarillo)}
+footer a{color:var(--azul-medio)}
+.sign{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:34px;margin-top:30px}
+.sign div{border-top:1px solid rgba(255,255,255,.35);padding-top:10px;font-size:.85rem;opacity:.85}
+.small{font-size:.82rem;color:var(--gris)}
+
+@media print{
+  nav{display:none}
+  body{background:#fff;font-size:11pt}
+  section{page-break-inside:avoid;padding:24px 0}
+  .hero{padding:36px 0}
+  .fase,.card,.opt,.callout{page-break-inside:avoid}
+}
+@media(max-width:640px){
+  .hero h1{font-size:2.2rem}
+  section h2{font-size:1.6rem}
+  table{font-size:.82rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ PORTADA ============ -->
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="mark">🐾 GUAU GUAU</div>
+    <h1>Propuesta de Desarrollo, Inversión y Participación</h1>
+    <p class="slogan">"Tu mejor amigo, en una sola app"</p>
+    <div class="hero-meta">
+      <div>Preparado para<strong>Ana Herrera · Suemi González · Angie Padilla</strong></div>
+      <div>Preparado por<strong>Josh Northcott · Horizon Tech</strong></div>
+      <div>Fecha<strong>4 de agosto de 2026</strong></div>
+      <div>Versión<strong>v1.0</strong></div>
+      <div>Vigencia<strong>30 días naturales</strong></div>
+    </div>
+    <div class="confid">Confidencial · Uso exclusivo del destinatario</div>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#resumen">Resumen</a></li>
+    <li><a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#alcance">Alcance</a></li>
+    <li><a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#fases">Fases</a></li>
+    <li><a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#equipo">Equipo y método</a></li>
+    <li><a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#inversion">Inversión</a></li>
+    <li><a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#equity">Participación</a></li>
+    <li><a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#gtm">Go-To-Market</a></li>
+    <li><a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#pagos">Pagos</a></li>
+    <li><a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#supuestos">Supuestos</a></li>
+    <li><a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#siguientes">Siguientes pasos</a></li>
+  </ul>
+</nav>
+
+<!-- ============ RESUMEN EJECUTIVO ============ -->
+<section id="resumen">
+  <div class="wrap">
+    <span class="eyebrow">01 · Resumen ejecutivo</span>
+    <h2>De concepto a ingresos recurrentes en 26 semanas</h2>
+    <p class="lede">Guau Guau es una súper-app canina mexicana que consolida perfil de mascota, expediente veterinario, rastreo en vivo y una red de paseadores y cuidadores en una sola plataforma. Esta propuesta detalla cómo se construye, cuánto cuesta, cómo se paga y qué participación accionaria puede sustituir parte de ese pago.</p>
+
+    <div class="grid g4" style="margin-bottom:26px">
+      <div class="stat"><div class="n">26 semanas</div><div class="l">De arranque a ingresos recurrentes</div></div>
+      <div class="stat"><div class="n">$325,000 MXN</div><div class="l">Inversión total en desarrollo, a precio cerrado</div></div>
+      <div class="stat"><div class="n">Semana 9</div><div class="l">App pública en tiendas, lista para publicidad</div></div>
+      <div class="stat"><div class="n">Hasta 25%</div><div class="l">Equity que puede sustituir hasta 25% del pago</div></div>
+    </div>
+
+    <div class="grid g2">
+      <div class="card">
+        <h3 style="margin-top:0">Qué propongo</h3>
+        <p>Construir Guau Guau completo — apps iOS y Android, backend, panel de administración, rastreo en vivo, marketplace y monetización — en seis fases de precio cerrado, por <strong>$325,000 MXN</strong> en total.</p>
+        <p style="margin-bottom:0">Un solo responsable cubre producto, diseño, desarrollo, calidad e infraestructura. Sin costo de coordinación, sin traspasos y con un solo interlocutor durante las 26 semanas.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">La estructura de pago</h3>
+        <p>El cliente puede pagar los $325,000 íntegros en efectivo, o <strong>sustituir hasta el 25% con participación accionaria</strong>: cada punto porcentual de equity reduce el pago en el mismo porcentaje.</p>
+        <p style="margin-bottom:0">La decisión se toma una sola vez, al firmar, y aplica a todas las fases <a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#equity">(Sección 06)</a>.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Lanzamiento temprano</h3>
+        <p style="margin-bottom:0">A diferencia de un proyecto que se mantiene cerrado hasta el final, la app sale a tiendas en la <strong>semana 9</strong>. El cliente empieza a construir audiencia cuatro meses antes de tener que monetizar, y el proveedor de marketing recibe un producto real con el cual trabajar desde el mes 3.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Qué no incluye</h3>
+        <p>La estrategia de salida al mercado la desarrolla un <strong>proveedor externo especializado</strong>; la <a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#gtm">Sección 07</a> está reservada para su contenido y presupuesto.</p>
+        <p style="margin-bottom:0">Tampoco incluye infraestructura en la nube, asesoría legal, contenido de producción ni operación diaria. El detalle está en la <a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#equipo">Sección 04</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ALCANCE ============ -->
+<section id="alcance">
+  <div class="wrap">
+    <span class="eyebrow">02 · Alcance</span>
+    <h2>Módulos del producto</h2>
+    <p class="lede">Seis módulos funcionales construidos sobre una base común de identidad, notificaciones y pagos. Todo el producto es <em>Spanish-first</em>: el español mexicano es el idioma nativo del diseño, no una traducción.</p>
+
+    <div class="grid g3">
+      <div class="card"><h4>🐕 Perfil y expediente</h4><p class="small" style="margin:0">Perfil multi-mascota, raza, fotos, documentos, cartilla de vacunación digital, recordatorios de desparasitación y alergias.</p></div>
+      <div class="card"><h4>🏥 Salud y veterinarios</h4><p class="small" style="margin:0">Historial clínico compartible, directorio de veterinarios verificados, agenda de citas y recordatorios automáticos.</p></div>
+      <div class="card"><h4>📍 Rastreo en vivo</h4><p class="small" style="margin:0">Mapa del paseo en tiempo real desde el teléfono del paseador, más rastreador GPS comercial vinculado al perfil: geocercas, alertas de salida de zona e historial de rutas.</p></div>
+      <div class="card"><h4>🤝 Marketplace de servicios</h4><p class="small" style="margin:0">Paseadores y cuidadores verificados, reservas, calificaciones, seguimiento del paseo en vivo y pago dentro de la app.</p></div>
+      <div class="card"><h4>💬 Red social canina</h4><p class="small" style="margin:0">Muro por colonia, eventos y quedadas de parque, grupos por raza, adopciones y reportes de mascotas perdidas.</p></div>
+      <div class="card"><h4>💳 Monetización</h4><p class="small" style="margin:0">Suscripción Premium ($79–$149 MXN/mes), comisión de 15–20% sobre reservas, publicidad segmentada y tienda dentro de la app.</p></div>
+    </div>
+
+    <h3>Plataformas y entregables técnicos</h3>
+    <ul>
+      <li><strong>Apps móviles nativas-híbridas</strong> para iOS y Android, publicadas en App Store y Google Play bajo la cuenta del cliente.</li>
+      <li><strong>Backend y API</strong> multi-tenant, con infraestructura en la nube, respaldos y monitoreo.</li>
+      <li><strong>Panel de administración web</strong> para moderación, verificación de proveedores, soporte y reportes.</li>
+      <li><strong>Capa de integración con rastreadores GPS</strong> comerciales, construida como adaptador para admitir más de una marca.</li>
+      <li><strong>Código fuente, documentación y transferencia de conocimiento</strong> — propiedad intelectual íntegra del cliente.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FASES ============ -->
+<section id="fases">
+  <div class="wrap">
+    <span class="eyebrow">03 · Etapas de desarrollo</span>
+    <h2>26 semanas hasta ingresos, con lanzamiento público en la semana 9</h2>
+    <p class="lede">Cada fase termina en un hito verificable y una decisión de continuar (<em>go / no-go</em>). El cliente puede detener el proyecto al cierre de cualquier fase pagando únicamente el trabajo entregado.</p>
+
+    <!-- FASE 0 -->
+    <div class="fase">
+      <div class="fase-head"><h3>Fase 0 · Descubrimiento y definición</h3><span class="chip">Semanas 1–2</span></div>
+      <p class="small" style="margin-bottom:10px">Convertir el plan de negocio y la identidad de marca existentes en un producto especificado y una arquitectura técnica ejecutable. <strong>Es la única fase con trabajo compartido: la investigación de mercado corre por cuenta del cliente.</strong></p>
+
+      <div class="grid g2" style="margin:14px 0">
+        <div style="background:var(--amarillo);border-radius:10px;padding:16px">
+          <h4 style="margin:0 0 8px;font-size:.95rem;color:var(--azul)">🐾 A cargo del cliente</h4>
+          <ul class="small" style="margin:0 0 0 18px">
+            <li><strong>Aprobación de la marca y el naming ya desarrollados</strong> — nombre Guau Guau, slogan, paleta dicromática, tipografía y sistema visual — <strong>o</strong> entrega de una identidad propia y definitiva en su lugar.</li>
+            <li>Entrevistas con 20–25 familias de Mérida sobre hábitos de cuidado y gasto en su mascota.</li>
+            <li>Conversaciones con 10 proveedores de servicio: paseadores, cuidadores y veterinarios.</li>
+            <li>Validación de disposición a pagar por la suscripción Premium.</li>
+            <li>Levantamiento de la competencia local y de los canales donde ya está la comunidad canina de Mérida.</li>
+            <li><strong>Entrega de todo lo anterior al cierre de la semana 1</strong>, en sesión de trabajo.</li>
+          </ul>
+        </div>
+        <div style="background:var(--azul);color:var(--crema);border-radius:10px;padding:16px">
+          <h4 style="margin:0 0 8px;font-size:.95rem;color:var(--amarillo)">⚙️ A cargo del socio tecnológico</h4>
+          <ul class="small" style="margin:0 0 0 18px;color:var(--crema)">
+            <li>Traducción de los hallazgos a alcance del MVP y backlog priorizado.</li>
+            <li><strong>Maqueta del flujo completo de la app</strong>: pantallas y recorridos principales, sin prototipo navegable.</li>
+            <li>Sistema de diseño Guau Guau aplicado a las pantallas clave.</li>
+            <li>Arquitectura de datos, modelo de seguridad y selección de proveedor cloud.</li>
+            <li>Plan de trabajo de la Fase 1 con fechas comprometidas.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout" style="margin:14px 0 0;padding:16px">
+        <p class="small" style="margin:0"><strong>La marca ya está resuelta.</strong> El nombre Guau Guau, el slogan “Tu mejor amigo, en una sola app”, la paleta construida sobre la visión dicromática canina y el sistema tipográfico ya fueron desarrollados y se entregan como parte del trabajo previo, sin costo adicional. La Fase 0 solo requiere su <strong>aprobación formal</strong>. Si prefieren una identidad distinta, debe entregarse cerrada al cierre de la semana 1: un cambio de marca posterior al congelamiento del alcance implica rehacer pantallas y se cotiza aparte.</p>
+      </div>
+
+      <div class="fase-meta">
+        <span>Duración<b>2 semanas</b></span><span>Costo<b>$25,000 MXN</b></span>
+        <span>Insumo del cliente<b>Investigación de mercado y aprobación de marca</b></span>
+        <span>Hito de salida<b>Maqueta del flujo aprobada + alcance y marca congelados</b></span>
+      </div>
+    </div>
+
+    <!-- FASE 1 -->
+    <div class="fase">
+      <div class="fase-head"><h3>Fase 1 · MVP — Perfiles, salud y comunidad</h3><span class="chip">Semanas 3–8</span></div>
+      <p class="small" style="margin-bottom:10px">Primera versión instalable con el núcleo emocional del producto: la mascota, su salud y su gente.</p>
+      <ul class="small">
+        <li>Registro, autenticación y perfiles multi-mascota con carga de fotos y documentos.</li>
+        <li>Cartilla de vacunación digital, recordatorios y expediente de salud compartible.</li>
+        <li>Muro social por colonia, publicaciones, comentarios y moderación básica.</li>
+        <li>Backend, API, panel de administración v1 e infraestructura productiva.</li>
+        <li>Apps iOS y Android en canal interno de pruebas (TestFlight / Internal Testing).</li>
+      </ul>
+      <div class="fase-meta">
+        <span>Duración<b>6 semanas</b></span><span>Costo<b>$75,000 MXN</b></span>
+        <span>Hito de salida<b>MVP instalable y estable</b></span>
+      </div>
+    </div>
+
+    <!-- FASE 2 · LANZAMIENTO PÚBLICO -->
+    <div class="fase" style="border-left-color:var(--azul)">
+      <div class="fase-head"><h3>Fase 2 · Lanzamiento público del MVP</h3><span class="chip">Semanas 9–10</span></div>
+      <p class="small" style="margin-bottom:10px">Sacar el MVP de la Fase 1 a las tiendas de aplicaciones para que <strong>el cliente arranque publicidad y construcción de audiencia desde el mes 3</strong>, mientras el desarrollo continúa en paralelo con la Fase 3. Cada usuario que entre en esta etapa es un usuario ya instalado cuando lleguen el GPS y el marketplace.</p>
+      <ul class="small">
+        <li>Publicación en App Store y Google Play bajo la cuenta del cliente, con optimización de fichas (ASO).</li>
+        <li>Avisos de privacidad, términos y cumplimiento LFPDPPP requeridos por las tiendas.</li>
+        <li>Instrumentación analítica en vivo: eventos, embudos y cohortes desde el primer usuario.</li>
+        <li>Enlaces profundos y atribución de instalaciones, para que la publicidad sea medible desde el día uno.</li>
+        <li>Página de aterrizaje con captura de lista de espera y correos transaccionales.</li>
+        <li>Canal de reporte de fallas y ciclo de corrección de la primera semana en vivo.</li>
+      </ul>
+      <div class="callout azul" style="margin:14px 0 0;padding:16px">
+        <p class="small" style="margin:0"><strong>Por qué importa esta fase.</strong> Adelanta el arranque comercial ocho meses respecto a un lanzamiento único al final del proyecto. Le da al proveedor de Go-To-Market un producto real con el cual trabajar, genera datos de uso que informan las Fases 3 y 4, y crea una base de usuarios lista para monetizar en cuanto se activen la suscripción y el marketplace.</p>
+      </div>
+      <div class="fase-meta">
+        <span>Duración<b>2 semanas</b></span><span>Costo<b>$25,000 MXN</b></span>
+        <span>Hito de salida<b>App pública en tiendas + analítica en vivo</b></span>
+        <span>Detona<b>Inicio de la campaña de audiencia del cliente</b></span>
+      </div>
+    </div>
+
+    <!-- FASE 3A -->
+    <div class="fase">
+      <div class="fase-head"><h3>Fase 3A · Rastreo en vivo</h3><span class="chip">Semanas 11–14</span></div>
+      <p class="small" style="margin-bottom:10px">Resolver el rastreo por dos vías complementarias, <strong>sin fabricar hardware</strong>: el teléfono del paseador durante el paseo, y un rastreador GPS comercial vinculado al perfil de la mascota para el resto del tiempo.</p>
+
+      <div class="grid g2" style="margin:14px 0">
+        <div class="card" style="background:var(--azul-palido);border-color:#cfe1f5">
+          <h4 style="margin:0 0 8px;font-size:.95rem">📱 Rastreo del paseo — solo software</h4>
+          <ul class="small" style="margin:0 0 0 18px">
+            <li>Mapa en vivo del paseo usando el GPS del teléfono del paseador.</li>
+            <li>Ruta recorrida, distancia, duración y resumen al finalizar.</li>
+            <li>Aviso al dueño al iniciar y terminar, con enlace para seguir el paseo.</li>
+            <li>Funciona igual en iOS y Android, sin comprar nada.</li>
+          </ul>
+        </div>
+        <div class="card" style="background:var(--azul-palido);border-color:#cfe1f5">
+          <h4 style="margin:0 0 8px;font-size:.95rem">📡 Rastreador GPS vinculado al perfil</h4>
+          <ul class="small" style="margin:0 0 0 18px">
+            <li>Capa de integración con rastreadores GPS con SIM y API abierta.</li>
+            <li>Alta del dispositivo por número de serie desde el perfil de la mascota.</li>
+            <li>Ubicación en vivo, geocercas de casa y parque, alerta de salida de zona.</li>
+            <li>Historial de rutas y última ubicación conocida.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout azul" style="margin:14px 0;padding:16px">
+        <p class="small" style="margin:0 0 8px"><strong>El modelo comercial que buscabas, sobre una base que sí funciona.</strong> El usuario compra su rastreador, envía el número de serie al contratar Premium y nosotros lo configuramos en el perfil de su mascota. Idéntico a la idea original — solo que apuntando a dispositivos con API documentada en lugar de al AirTag.</p>
+        <p class="small" style="margin:0"><strong>Por qué no AirTag.</strong> Apple no publica API para consultar la ubicación de un AirTag y el número de serie no permite ninguna consulta. El programa MFi de Apple es solo para fabricantes, y el sistema está cifrado de extremo a extremo: ni el propio fabricante puede leer la ubicación. Además el AirTag no es GPS (se actualiza solo cuando pasa un iPhone cerca, sin geocercas ni rutas), no funciona en Android — cerca del 80% del mercado mexicano — y sus alertas antiacoso avisarían al paseador en cada paseo, rompiendo el marketplace.</p>
+      </div>
+
+      <p class="small">La integración se construye como <strong>adaptador</strong>: sumar otra marca de rastreador más adelante no requiere rehacer la app, y deja abierta la puerta al collar propio Guau Guau en la Fase 5.</p>
+
+      <div class="callout" style="margin:14px 0 0;padding:18px;border-color:var(--azul)">
+        <h4 style="margin:0 0 8px;font-size:1rem">⚠️ Decisión pendiente: quién paga el plan de datos</h4>
+        <p class="small" style="margin:0 0 10px">Todo rastreador GPS con SIM requiere un <strong>plan de datos mensual del fabricante</strong> para transmitir la ubicación. Es un costo recurrente que existe además de la suscripción a Guau Guau, y hay que decidir cómo se maneja antes de fijar el precio Premium:</p>
+        <ul class="small" style="margin:0 0 10px 18px">
+          <li><strong>Lo absorbe la suscripción.</strong> Propuesta más limpia para el usuario — un solo pago mensual — pero come margen de los $79–$149 MXN y puede volverla poco rentable si el plan del fabricante ronda los $50–$100 MXN mensuales.</li>
+          <li><strong>Lo paga el usuario aparte.</strong> Protege el margen íntegro, pero el usuario enfrenta dos cobros y la promesa de "todo en una sola app" pierde fuerza.</li>
+          <li><strong>Nivel Premium Plus.</strong> Un plan superior que incluye el rastreo con datos, dejando el Premium básico intacto. Segmenta el gasto entre quienes realmente quieren rastreo 24/7.</li>
+        </ul>
+        <p class="small" style="margin:0">La decisión afecta directamente el margen de contribución y el modelo de ingresos del plan de negocio. Conviene resolverla durante la <strong>Fase 0</strong>, cuando la investigación con familias puede medir la disposición a pagar por cada esquema.</p>
+      </div>
+
+      <div class="fase-meta">
+        <span>Duración<b>4 semanas</b></span><span>Costo<b>$50,000 MXN</b></span>
+        <span>Hito de salida<b>Paseo en vivo + rastreador vinculado y funcionando</b></span>
+      </div>
+    </div>
+
+    <!-- FASE 3B -->
+    <div class="fase">
+      <div class="fase-head"><h3>Fase 3B · Marketplace y beta cerrada en Mérida</h3><span class="chip">Semanas 15–20</span></div>
+      <p class="small" style="margin-bottom:10px">El módulo que convierte a Guau Guau de app de mascotas en plataforma con ingresos, validado con usuarios reales antes de encender el cobro.</p>
+      <ul class="small">
+        <li>Alta y verificación de paseadores y cuidadores: identificación, referencias y distintivo de verificado.</li>
+        <li>Búsqueda por colonia, disponibilidad, tarifas y perfil del proveedor.</li>
+        <li>Reservas, confirmación, cancelación y calendario de servicios.</li>
+        <li>Calificaciones y reseñas bidireccionales entre dueño y proveedor.</li>
+        <li>Seguimiento del paseo en vivo integrado desde la Fase 3A.</li>
+        <li>Beta cerrada con 300–500 familias y los primeros 30–50 proveedores, con instrumentación analítica completa.</li>
+        <li>Ciclo de corrección y ajuste según datos de uso reales.</li>
+      </ul>
+      <div class="fase-meta">
+        <span>Duración<b>6 semanas</b></span><span>Costo<b>$75,000 MXN</b></span>
+        <span>Insumo del cliente<b>Reclutamiento de los primeros proveedores</b></span>
+        <span>Hito de salida<b>Beta con retención de 30 días validada</b></span>
+      </div>
+    </div>
+
+    <!-- FASE 4 -->
+    <div class="fase">
+      <div class="fase-head"><h3>Fase 4 · Monetización</h3><span class="chip">Semanas 21–26</span></div>
+      <p class="small" style="margin-bottom:10px">Encender los ingresos sobre la audiencia ya construida desde la Fase 2. Se prioriza lo que cobra dinero: suscripción y comisiones.</p>
+      <ul class="small">
+        <li>Suscripción Premium ($79–$149 MXN/mes) con pasarela de pago local: tarjeta, SPEI y OXXO.</li>
+        <li>Facturación CFDI y gestión de altas, bajas y renovaciones.</li>
+        <li>Vinculación del rastreador GPS como beneficio Premium: el usuario envía su número de serie y queda configurado en el perfil.</li>
+        <li>Motor de comisiones de 15–20% sobre reservas y liquidación a proveedores.</li>
+        <li>Panel de ingresos, conciliación y reportes para el cliente.</li>
+        <li>Endurecimiento de seguridad y pruebas de carga.</li>
+      </ul>
+      <p class="small" style="margin-bottom:0"><strong>Se posponen a la Fase 5:</strong> publicidad segmentada, tienda dentro de la app y recomendaciones por perfil. No generan ingresos hasta tener volumen de usuarios, así que no compiten por presupuesto con la suscripción.</p>
+      <div class="fase-meta">
+        <span>Duración<b>6 semanas</b></span><span>Costo<b>$75,000 MXN</b></span>
+        <span>Hito de salida<b>Ingresos recurrentes activos</b></span>
+      </div>
+    </div>
+
+    <!-- FASE 5 -->
+    <div class="fase" style="border-left-color:var(--azul-medio);opacity:.95">
+      <div class="fase-head"><h3>Fase 5 · Escala nacional, publicidad y hardware</h3><span class="chip alt">Fuera del alcance contratado</span></div>
+      <p class="small" style="margin-bottom:10px">Expansión a CDMX, Guadalajara y Monterrey, los módulos de ingreso secundario y la decisión sobre collar propio. Se financia con flujo operativo o con una ronda posterior; se detalla aquí para dar visibilidad completa de la ruta, no para cotizarse hoy.</p>
+      <ul class="small">
+        <li>Arquitectura multi-ciudad, operaciones y contenido localizado por plaza.</li>
+        <li>Publicidad segmentada, tienda dentro de la app y recomendaciones por perfil de mascota.</li>
+        <li>Programa de referidos, detección de fraude y herramientas internas de operación.</li>
+        <li>Collar Guau Guau propio, si los datos de uso justifican el hardware: rastreador LTE de marca blanca o desarrollo dentro del programa MFi de Apple.</li>
+      </ul>
+      <div class="fase-meta">
+        <span>Duración<b>Desde 6 semanas</b></span><span>Costo<b>Desde $150,000 MXN</b></span>
+        <span>Alcance<b>Modular, según el ritmo de escalamiento</b></span>
+      </div>
+      <p class="small" style="margin:12px 0 0"><strong>Se contrata por módulos, no en bloque.</strong> Cada elemento de esta fase es independiente y se activa solo cuando los datos de uso lo justifiquen. El punto de partida son 6 semanas por el primer módulo; de ahí en adelante el ritmo lo marca el crecimiento del negocio, no un calendario fijo.</p>
+    </div>
+
+    <h3>Línea de tiempo</h3>
+    <div class="timeline">
+      <div class="tl-item"><b>Semanas 1–2 · Fase 0</b><span>Investigación del cliente + maqueta del flujo y alcance congelado. Fecha límite del plan de marketing del proveedor externo</span></div>
+      <div class="tl-item"><b>Semanas 3–8 · Fase 1</b><span>MVP instalable: perfiles, salud y comunidad</span></div>
+      <div class="tl-item" style="background:var(--amarillo);border-radius:10px;padding:12px 14px;margin-left:-6px"><b>Semanas 9–10 · Fase 2 — Lanzamiento público</b><span style="color:var(--azul)">App en tiendas. <strong>Arranca la publicidad y la construcción de audiencia del cliente.</strong></span></div>
+      <div class="tl-item"><b>Semanas 11–14 · Fase 3A</b><span>Rastreo en vivo del paseo y del rastreador GPS vinculado</span></div>
+      <div class="tl-item"><b>Semanas 15–20 · Fase 3B</b><span>Marketplace y beta cerrada — en paralelo a la campaña de audiencia</span></div>
+      <div class="tl-item"><b>Semanas 21–26 · Fase 4</b><span>Monetización sobre la base de usuarios ya construida</span></div>
+      <div class="tl-item"><b>Semana 27+ · Fase 5</b><span>Escala a CDMX, GDL y MTY, publicidad y hardware (fuera de alcance)</span></div>
+    </div>
+
+    <h3>Resumen de alcance y costo</h3>
+    <table>
+      <thead><tr><th>Fase</th><th class="num">Semanas</th><th class="num">Duración</th><th class="num">Costo (MXN)</th></tr></thead>
+      <tbody>
+        <tr><td>Fase 0 · Descubrimiento y definición</td><td class="num">1–2</td><td class="num">2 sem</td><td class="num">$25,000</td></tr>
+        <tr><td>Fase 1 · MVP — perfiles, salud y comunidad</td><td class="num">3–8</td><td class="num">6 sem</td><td class="num">$75,000</td></tr>
+        <tr><td>Fase 2 · Lanzamiento público del MVP</td><td class="num">9–10</td><td class="num">2 sem</td><td class="num">$25,000</td></tr>
+        <tr><td>Fase 3A · Rastreo en vivo</td><td class="num">11–14</td><td class="num">4 sem</td><td class="num">$50,000</td></tr>
+        <tr><td>Fase 3B · Marketplace y beta cerrada</td><td class="num">15–20</td><td class="num">6 sem</td><td class="num">$75,000</td></tr>
+        <tr><td>Fase 4 · Monetización</td><td class="num">21–26</td><td class="num">6 sem</td><td class="num">$75,000</td></tr>
+        <tr class="total"><td>Total del alcance contratado</td><td class="num">1–26</td><td class="num">26 sem</td><td class="num">$325,000</td></tr>
+        <tr><td style="opacity:.7">Fase 5 · Escala, publicidad y hardware <em>(modular, fuera de alcance)</em></td><td class="num" style="opacity:.7">27+</td><td class="num" style="opacity:.7">desde 6 sem</td><td class="num" style="opacity:.7">desde $150,000</td></tr>
+      </tbody>
+      <caption>Tarifa uniforme de $25,000 MXN por cada bloque de 2 semanas. Montos antes de IVA. La Fase 5 no se cotiza hoy: se contrata por módulos, al ritmo que marque el crecimiento del negocio.</caption>
+    </table>
+
+    <div class="callout" style="margin-top:26px">
+      <h3 style="margin-top:0">Dos lanzamientos, no uno</h3>
+      <p style="margin-bottom:0">La estructura anterior mantenía el producto cerrado hasta el final. Esta versión lo abre al público en la <strong>semana 9</strong> con el MVP de la Fase 1, y reserva un segundo momento comercial en la Fase 4, cuando se activan la suscripción, el rastreo y el marketplace. El cliente gana <strong>cuatro meses de construcción de audiencia</strong> antes de tener que monetizar, y el proveedor de Go-To-Market recibe un producto real con el cual trabajar desde el mes 3.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EQUIPO Y TARIFAS ============ -->
+<section id="equipo">
+  <div class="wrap">
+    <span class="eyebrow">04 · Equipo y método</span>
+    <h2>Un solo responsable, todas las funciones</h2>
+    <p class="lede">Guau Guau no lo construye una agencia con seis personas facturando horas. Lo construye una sola persona que cubre producto, diseño, desarrollo, calidad e infraestructura de extremo a extremo. Esa es la razón de fondo por la que el proyecto cuesta lo que cuesta y avanza a la velocidad que avanza.</p>
+
+    <h3>Funciones cubiertas</h3>
+    <div class="grid g3">
+      <div class="card"><h4>🎯 Producto</h4><p class="small" style="margin:0">Definición de alcance, priorización del backlog, decisiones de qué entra y qué se pospone en cada fase.</p></div>
+      <div class="card"><h4>🎨 Diseño UX / UI</h4><p class="small" style="margin:0">Maquetas de flujo, sistema de diseño Guau Guau y aplicación de la paleta dicromática a cada pantalla.</p></div>
+      <div class="card"><h4>⚙️ Desarrollo</h4><p class="small" style="margin:0">Apps iOS y Android, backend, API, panel de administración e integraciones con rastreadores y pasarelas de pago.</p></div>
+      <div class="card"><h4>🔍 Calidad</h4><p class="small" style="margin:0">Pruebas funcionales, corrección de defectos y ciclos de ajuste sobre datos reales de la beta.</p></div>
+      <div class="card"><h4>☁️ Infraestructura</h4><p class="small" style="margin:0">Nube, despliegues, respaldos, monitoreo, seguridad y publicación en App Store y Google Play.</p></div>
+      <div class="card"><h4>📊 Datos</h4><p class="small" style="margin:0">Instrumentación analítica, embudos, cohortes y los reportes que la estrategia de marketing necesita para ser medible.</p></div>
+    </div>
+
+    <h3>Por qué un solo responsable es una ventaja</h3>
+    <div class="grid g2">
+      <div class="card">
+        <ul class="small" style="margin:0 0 0 18px">
+          <li><strong>Cero costo de coordinación.</strong> No hay juntas de sincronización, traspasos entre áreas ni tiempo perdido explicando el contexto de una persona a otra.</li>
+          <li><strong>Un solo interlocutor.</strong> Quien toma la decisión de producto es quien escribe el código. Las dudas se resuelven en horas, no en ciclos de correo.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <ul class="small" style="margin:0 0 0 18px">
+          <li><strong>Coherencia del producto.</strong> Una sola cabeza sostiene el criterio de diseño y arquitectura en las 26 semanas: el resultado no se siente cosido de pedazos.</li>
+          <li><strong>Responsabilidad clara.</strong> Si algo falla, hay una sola persona a quien preguntar y una sola persona que lo corrige.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout azul">
+      <h3 style="margin-top:0">Desarrollo asistido por inteligencia artificial</h3>
+      <p>El calendario de 26 semanas es posible porque el desarrollo se apoya de forma intensiva en herramientas de IA de última generación. No se trata de generar código a ciegas: la IA acelera la parte mecánica del trabajo — andamiaje, pruebas, integraciones, documentación — mientras las decisiones de arquitectura, producto y calidad siguen siendo humanas y revisadas línea por línea.</p>
+      <p style="margin-bottom:0"><strong>Lo que esto significa para Guau Guau:</strong> un alcance que hace tres años habría requerido un equipo de seis personas y más de un año, hoy lo entrega una persona en poco más de seis meses, por una fracción del costo. Es la razón por la que esta propuesta puede ofrecer precio cerrado por fase en lugar de una tarifa por hora abierta.</p>
+    </div>
+
+    <h3>Precio cerrado, no horas facturadas</h3>
+    <p>Cada fase tiene un <strong>precio fijo de $25,000 MXN por cada bloque de dos semanas</strong>, acordado antes de empezar. El cliente no paga horas ni asume el riesgo de que una estimación se desborde: si una fase toma más tiempo del previsto, el costo no cambia.</p>
+    <table>
+      <thead><tr><th>Concepto</th><th>Cómo funciona</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Unidad de contratación</strong></td><td>Bloques de 2 semanas a $25,000 MXN, con entregable definido en cada bloque.</td></tr>
+        <tr><td><strong>Riesgo de estimación</strong></td><td>Lo absorbe el desarrollador, no el cliente. El precio de la fase es firme.</td></tr>
+        <tr><td><strong>Alcance</strong></td><td>Se congela al inicio de cada fase. Los cambios se cotizan por escrito en bloques de 2 semanas.</td></tr>
+        <tr><td><strong>Salida</strong></td><td>El cliente puede detener el proyecto al cierre de cualquier fase, pagando solo lo entregado.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Lo que se contrata por fuera</h3>
+    <p>Ser transparente sobre los límites es parte de la propuesta. Estas funciones no las cubre el desarrollo y requieren proveedor propio:</p>
+    <ul>
+      <li><strong>Infraestructura en la nube y servicios de terceros.</strong> Servidores, base de datos, almacenamiento de fotos y documentos, envío de notificaciones, APIs de mapas y pasarela de pago. Las cuentas se abren <strong>a nombre del cliente</strong>, que paga el consumo directamente al proveedor; yo las configuro y administro sin intermediar el cobro. Esto evita sobreprecio y deja la infraestructura bajo su control desde el día uno.</li>
+      <li><strong>Estrategia y ejecución de marketing</strong> — proveedor externo especializado <a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#gtm">(Sección 07)</a>.</li>
+      <li><strong>Contenido editorial, fotografía y video</strong> de producción para la app y las tiendas.</li>
+      <li><strong>Asesoría legal y fiscal</strong> mexicana: avisos de privacidad, términos, constitución y facturación.</li>
+      <li><strong>Operación diaria</strong>: moderación de contenido, verificación de proveedores y atención a usuarios una vez en vivo.</li>
+    </ul>
+    <p class="small">El consumo de nube arranca en unos <strong>$1,500–$3,000 MXN mensuales</strong> durante el desarrollo y crece con los usuarios. La arquitectura se diseña para mantener ese costo bajo el mayor tiempo posible.</p>
+  </div>
+</section>
+
+<!-- ============ INVERSIÓN ============ -->
+<section id="inversion">
+  <div class="wrap">
+    <span class="eyebrow">05 · Requerimiento de inversión</span>
+    <h2>$325,000 MXN para tener el producto en el mercado</h2>
+    <p class="lede">Ésta es la inversión total en desarrollo: seis fases a precio cerrado, sin horas facturadas y sin sorpresas. Cubre desde la definición del producto hasta el primer peso cobrado a un usuario.</p>
+
+    <table>
+      <thead><tr><th>Fase</th><th class="num">Duración</th><th class="num">Inversión (MXN)</th><th class="num">% del total</th></tr></thead>
+      <tbody>
+        <tr><td>Fase 0 · Descubrimiento y definición</td><td class="num">2 sem</td><td class="num">$25,000</td><td class="num">7.7%</td></tr>
+        <tr><td>Fase 1 · MVP — perfiles, salud y comunidad</td><td class="num">6 sem</td><td class="num">$75,000</td><td class="num">23.1%</td></tr>
+        <tr><td>Fase 2 · Lanzamiento público del MVP</td><td class="num">2 sem</td><td class="num">$25,000</td><td class="num">7.7%</td></tr>
+        <tr><td>Fase 3A · Rastreo en vivo</td><td class="num">4 sem</td><td class="num">$50,000</td><td class="num">15.4%</td></tr>
+        <tr><td>Fase 3B · Marketplace y beta cerrada</td><td class="num">6 sem</td><td class="num">$75,000</td><td class="num">23.1%</td></tr>
+        <tr><td>Fase 4 · Monetización</td><td class="num">6 sem</td><td class="num">$75,000</td><td class="num">23.1%</td></tr>
+        <tr class="total"><td>Inversión total en desarrollo</td><td class="num">26 sem</td><td class="num">$325,000</td><td class="num">100%</td></tr>
+      </tbody>
+      <caption>Montos en pesos mexicanos, antes de IVA. Precio cerrado por fase: si una fase toma más tiempo del previsto, el costo no cambia.</caption>
+    </table>
+
+    <div class="bar">
+      <div style="width:7.7%;background:var(--oscuro)">F0</div>
+      <div style="width:23.1%;background:var(--azul)">Fase 1 · MVP</div>
+      <div style="width:7.7%;background:var(--amarillo);color:var(--oscuro)">F2</div>
+      <div style="width:15.4%;background:var(--azul-medio);color:var(--oscuro)">Fase 3A</div>
+      <div style="width:23.1%;background:var(--azul)">Fase 3B</div>
+      <div style="width:23.1%;background:var(--gris)">Fase 4</div>
+    </div>
+    <div class="legend">
+      <span><i style="background:var(--oscuro)"></i>Definición</span>
+      <span><i style="background:var(--azul)"></i>Construcción del producto</span>
+      <span><i style="background:var(--amarillo)"></i>Lanzamiento público</span>
+      <span><i style="background:var(--azul-medio)"></i>Rastreo</span>
+      <span><i style="background:var(--gris)"></i>Monetización</span>
+    </div>
+
+    <div class="callout azul">
+      <h3 style="margin-top:0">La inversión no se desembolsa de golpe</h3>
+      <p style="margin-bottom:0">Se libera fase por fase, contra entregable aprobado. El compromiso real al firmar es de <strong>$25,000 MXN</strong>, el costo íntegro de la Fase 0: dos semanas después el cliente tiene la maqueta del flujo completo y el alcance congelado, y decide con información real si continúa. Todo lo demás está condicionado a que la fase anterior se haya entregado y aprobado, y el cliente puede detenerse al cierre de cualquier fase sin penalización. El calendario completo está en la <a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#pagos">Sección 08</a>.</p>
+    </div>
+
+    <h3>Presupuesto adicional a considerar</h3>
+    <p>Estos conceptos no forman parte de los $325,000 y se contratan por separado <a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#equipo">(ver Sección 04)</a>. Se incluyen aquí para que el cliente presupueste el costo real de llegar al mercado, no solo el del desarrollo:</p>
+    <table>
+      <thead><tr><th>Concepto</th><th>Responsable</th><th class="num">Estimado (MXN)</th></tr></thead>
+      <tbody>
+        <tr><td>Infraestructura en la nube y servicios (6 meses de desarrollo)</td><td>Cliente, pago directo al proveedor</td><td class="num">$9,000 – $18,000</td></tr>
+        <tr><td>Cuentas de desarrollador App Store y Google Play</td><td>Cliente</td><td class="num">$2,500 aprox.</td></tr>
+        <tr><td>Legal: avisos de privacidad, términos, constitución y marca</td><td>Despacho del cliente</td><td class="num">Por cotizar</td></tr>
+        <tr><td>Contenido: fotografía, video y textos de producción</td><td>Cliente o proveedor</td><td class="num">Por cotizar</td></tr>
+        <tr><td><strong>Estrategia y ejecución de Go-To-Market</strong></td><td>Proveedor externo <a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#gtm">(Sección 07)</a></td><td class="num">Por cotizar</td></tr>
+        <tr><td>Operación diaria una vez en vivo: moderación, verificación y soporte</td><td>Cliente</td><td class="num">Por definir</td></tr>
+      </tbody>
+      <caption>Estimados indicativos. La nube arranca en $1,500–$3,000 MXN mensuales y crece con el número de usuarios.</caption>
+    </table>
+  </div>
+</section>
+
+<!-- ============ EQUITY ============ -->
+<section id="equity">
+  <div class="wrap">
+    <span class="eyebrow">06 · Participación accionaria</span>
+    <h2>Equity en lugar de efectivo, punto por punto</h2>
+    <p class="lede">El cliente puede reducir el desembolso cediendo participación accionaria. La mecánica es directa: <strong>cada punto porcentual de equity reduce el pago en el mismo porcentaje</strong>, con un tope del 25%. No hay valuaciones complejas ni instrumentos convertibles — es una sola decisión, tomada al firmar.</p>
+
+    <div class="callout" style="margin-top:0">
+      <h3 style="margin-top:0">Cómo funciona</h3>
+      <p style="margin-bottom:0">Si el cliente cede <strong>15%</strong> de la empresa, paga <strong>15% menos</strong>: $276,250 en lugar de $325,000. El descuento se aplica proporcionalmente a cada fase, de modo que el alivio en el flujo de caja se siente desde el primer pago y no hasta el final del proyecto.</p>
+    </div>
+
+    <div class="grid g3">
+      <div class="opt">
+        <h4>Opción A · Efectivo total</h4>
+        <div class="eq">0%</div>
+        <div class="eqlbl">Participación cedida</div>
+        <p class="small">Relación de proveedor tradicional. El cliente conserva el 100% de la empresa y paga el precio completo.</p>
+        <dl>
+          <dt>Pago en efectivo</dt><dd>$325,000</dd>
+          <dt>Ahorro</dt><dd>$0</dd>
+          <dt>Equity cedido</dt><dd>0%</dd>
+        </dl>
+      </div>
+
+      <div class="opt rec">
+        <span class="badge-rec">★ Punto medio</span>
+        <h4>Opción B · Mixta</h4>
+        <div class="eq">15%</div>
+        <div class="eqlbl">Participación cedida</div>
+        <p class="small">Equilibrio entre conservar control y aliviar el flujo de caja. Alinea mi incentivo con el desempeño del producto sin ceder una porción determinante de la empresa.</p>
+        <dl>
+          <dt>Pago en efectivo</dt><dd>$276,250</dd>
+          <dt>Ahorro</dt><dd>$48,750</dd>
+          <dt>Equity cedido</dt><dd>15%</dd>
+        </dl>
+      </div>
+
+      <div class="opt">
+        <h4>Opción C · Socio tecnológico</h4>
+        <div class="eq">25%</div>
+        <div class="eqlbl">Participación cedida</div>
+        <p class="small">Máximo descuento disponible. Me convierte en socio de largo plazo con interés directo en que Guau Guau funcione más allá de la entrega.</p>
+        <dl>
+          <dt>Pago en efectivo</dt><dd>$243,750</dd>
+          <dt>Ahorro</dt><dd>$81,250</dd>
+          <dt>Equity cedido</dt><dd>25%</dd>
+        </dl>
+      </div>
+    </div>
+
+    <p class="small">Los tres escenarios anteriores son referencias, no las únicas opciones: se admite cualquier punto intermedio hasta el tope del 25%.</p>
+
+    <h3>Qué obtiene el cliente además del descuento</h3>
+    <p>La participación no es solo una forma de pagar menos. Un desarrollador con capital en la empresa tiene motivos para seguir cerca después de la entrega:</p>
+    <div class="grid g2">
+      <div class="card">
+        <ul class="small" style="margin:0 0 0 18px">
+          <li><strong>Continuidad garantizada.</strong> Interés directo en que el producto siga funcionando y evolucionando, no solo en cerrar el contrato.</li>
+          <li><strong>Prioridad de atención.</strong> Guau Guau deja de competir con otros proyectos por mi tiempo.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <ul class="small" style="margin:0 0 0 18px">
+          <li><strong>Interlocutor técnico permanente</strong> para decisiones de producto, proveedores y arquitectura.</li>
+          <li><strong>Tarifas preferentes</strong> en las fases posteriores a la entrega, incluida la Fase 5.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Condiciones</h3>
+    <ul>
+      <li><strong>Acciones ordinarias sin preferencias.</strong> Entro en la misma clase que los fundadores, sin liquidación preferente ni derecho de veto.</li>
+      <li><strong>Vesting por entrega, no por tiempo.</strong> La participación se devenga al cierre aprobado de cada fase, en proporción al avance. Si el proyecto se detiene, solo se consolida lo correspondiente a lo entregado.</li>
+      <li><strong>Cláusula de recompra.</strong> El cliente puede recomprar la participación completa dentro de los 24 meses posteriores a la entrega final, pagando el monto del descuento más un 30% anual.</li>
+      <li><strong>Sin asiento en el consejo</strong>, con derechos de información estándar: estados financieros y métricas trimestrales.</li>
+      <li><strong>Propiedad intelectual del cliente desde el día uno</strong>, sin importar la opción elegida. El código y la marca son suyos aunque la participación no se haya devengado.</li>
+      <li><strong>Antidilución simple.</strong> La participación se diluye en igualdad de condiciones que la de los fundadores en rondas futuras, sin protección especial.</li>
+      <li><strong>Arrastre y acompañamiento</strong> (<em>drag-along / tag-along</em>) en los mismos términos que los fundadores.</li>
+      <li><strong>Decisión única al firmar.</strong> El porcentaje se fija en el contrato inicial y no se renegocia por fase.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ GTM (PLACEHOLDER TERCERO) ============ -->
+<section id="gtm">
+  <div class="wrap">
+    <span class="eyebrow">07 · Go-To-Market</span>
+    <h2>Estrategia de salida al mercado</h2>
+    <p class="lede"><strong>Esta sección será desarrollada por un proveedor externo especializado en marketing y crecimiento.</strong> El contenido, las tácticas y el presupuesto que aparecen a continuación son marcadores de posición; se sustituirán íntegramente por la propuesta del tercero antes de la versión final de este documento.</p>
+
+    <div class="callout">
+      <h3 style="margin-top:0">Brief para el proveedor externo</h3>
+      <p>Para integrar su propuesta a este documento, solicitamos que cubra los siguientes puntos:</p>
+      <div class="grid g2">
+        <div>
+          <ol class="small">
+            <li><strong>Posicionamiento y mensaje</strong> — cómo se comunica "Como tu perro lo ve todo" y la promesa de la súper-app canina.</li>
+            <li><strong>Segmentos prioritarios</strong> — familias urbanas de 25–45 años en Mérida, y perfiles secundarios (paseadores, veterinarios, criadores).</li>
+            <li><strong>Estrategia de lanzamiento en Mérida</strong> — lista de espera, beta cerrada, evento de lanzamiento y alianzas locales.</li>
+            <li><strong>Canales y mezcla de inversión</strong> — orgánico, pagado, influencers caninos, veterinarias, parques y tiendas de mascotas.</li>
+          </ol>
+        </div>
+        <div>
+          <ol start="5" class="small">
+            <li><strong>Estrategia de contenido y comunidad</strong> — calendario editorial, TikTok/Instagram, contenido generado por usuarios.</li>
+            <li><strong>Adquisición del lado de la oferta</strong> — cómo reclutar y verificar los primeros 100 paseadores y cuidadores.</li>
+            <li><strong>Objetivos y métricas</strong> — CAC objetivo, meta de descargas mes 1/3/6, conversión a Premium y retención a 30 días.</li>
+            <li><strong>Presupuesto detallado y calendario</strong> — desglose por canal y por mes, alineado a las fases de desarrollo.</li>
+            <li><strong>Plan de expansión</strong> — cómo se replica el modelo en CDMX, Guadalajara y Monterrey.</li>
+          </ol>
+        </div>
+      </div>
+      <p class="small" style="margin-bottom:0"><strong>Formato solicitado:</strong> documento editable más presupuesto en hoja de cálculo. <strong>Fecha límite:</strong> cierre de la Fase 0, semana 2. <strong>Presupuesto:</strong> lo define el propio proveedor; no forma parte de los $325,000 de desarrollo.</p>
+      <p class="small" style="margin:10px 0 0"><strong>Por qué esa fecha.</strong> Al cierre de la Fase 0 el alcance del producto queda congelado y existe la maqueta del flujo completo: el proveedor ya sabe exactamente qué se va a lanzar y cuándo. Entregar en ese momento le da <strong>seis semanas</strong> para preparar la campaña antes de que la app salga a tiendas en la semana 9, y permite que la investigación de mercado del cliente alimente tanto el producto como la estrategia de marketing.</p>
+    </div>
+
+    <h3>Contenido a proporcionar por el tercero</h3>
+    <p class="small">Cinco apartados reservados. Cada uno se sustituirá por el contenido del proveedor externo en la versión final.</p>
+
+    <div class="ph-list">
+      <div class="ph-row">
+        <div class="ph-num">7.1</div>
+        <div class="ph-body"><b>Posicionamiento, mensaje y segmentos</b><span>Cómo se comunica la promesa de la súper-app canina y a quién se le habla primero.</span></div>
+        <div class="ph-tag">Pendiente</div>
+      </div>
+      <div class="ph-row">
+        <div class="ph-num">7.2</div>
+        <div class="ph-body"><b>Plan de lanzamiento en Mérida</b><span>Lista de espera, beta cerrada, evento de lanzamiento y alianzas locales.</span></div>
+        <div class="ph-tag">Pendiente</div>
+      </div>
+      <div class="ph-row">
+        <div class="ph-num">7.3</div>
+        <div class="ph-body"><b>Canales, mezcla de inversión y calendario</b><span>Orgánico, pagado, influencers, veterinarias y puntos de encuentro caninos.</span></div>
+        <div class="ph-tag">Pendiente</div>
+      </div>
+      <div class="ph-row">
+        <div class="ph-num">7.4</div>
+        <div class="ph-body"><b>Métricas, objetivos y CAC</b><span>Metas de descargas, conversión a Premium y retención a 30 días.</span></div>
+        <div class="ph-tag">Pendiente</div>
+      </div>
+      <div class="ph-row">
+        <div class="ph-num">7.5</div>
+        <div class="ph-body"><b>Presupuesto de marketing y plan de expansión</b><span>Desglose por canal y por mes, más la réplica del modelo en CDMX, GDL y MTY.</span></div>
+        <div class="ph-tag">Pendiente</div>
+      </div>
+    </div>
+
+    <h3>Nuestro rol de apoyo al Go-To-Market</h3>
+    <p>Aunque la estrategia la define el tercero, el desarrollo incluye sin costo adicional la infraestructura técnica que la hace medible y ejecutable:</p>
+    <ul>
+      <li>Instrumentación analítica completa desde la Fase 1 (eventos, embudos y cohortes).</li>
+      <li>Enlaces profundos (<em>deep links</em>) y atribución de instalaciones por campaña.</li>
+      <li>Notificaciones push segmentadas y correos transaccionales.</li>
+      <li>Programa de referidos e invitaciones con código único.</li>
+      <li>Página de aterrizaje con captura de lista de espera y optimización para tiendas de aplicaciones (ASO).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PAGOS ============ -->
+<section id="pagos">
+  <div class="wrap">
+    <span class="eyebrow">08 · Pagos y gobernanza</span>
+    <h2>Calendario de pagos y forma de trabajo</h2>
+
+    <h3>Calendario de pagos</h3>
+    <p>La <strong>Fase 0 se paga completa al firmar</strong>: son solo dos semanas y el entregable es inmediato. De la Fase 1 en adelante, cada fase se paga en dos partes: <strong>50% al inicio</strong>, que autoriza el arranque, y <strong>50% contra entregable aprobado</strong>. Nada se paga por adelantado más allá de la fase en curso, y el cliente puede detener el proyecto al cierre de cualquier fase sin penalización.</p>
+    <table>
+      <thead><tr><th>Fase</th><th class="num">Al inicio</th><th class="num">Contra entrega</th><th class="num">Total fase</th></tr></thead>
+      <tbody>
+        <tr><td>Fase 0 · Descubrimiento y definición</td><td class="num">$25,000</td><td class="num">—</td><td class="num">$25,000</td></tr>
+        <tr><td>Fase 1 · MVP</td><td class="num">$37,500</td><td class="num">$37,500</td><td class="num">$75,000</td></tr>
+        <tr><td>Fase 2 · Lanzamiento público</td><td class="num">$12,500</td><td class="num">$12,500</td><td class="num">$25,000</td></tr>
+        <tr><td>Fase 3A · Rastreo en vivo</td><td class="num">$25,000</td><td class="num">$25,000</td><td class="num">$50,000</td></tr>
+        <tr><td>Fase 3B · Marketplace y beta</td><td class="num">$37,500</td><td class="num">$37,500</td><td class="num">$75,000</td></tr>
+        <tr><td>Fase 4 · Monetización</td><td class="num">$37,500</td><td class="num">$37,500</td><td class="num">$75,000</td></tr>
+        <tr class="total"><td>Total</td><td class="num">$175,000</td><td class="num">$150,000</td><td class="num">$325,000</td></tr>
+      </tbody>
+      <caption>Montos a precio completo, sin descuento por equity. Facturación a 15 días naturales, antes de IVA.</caption>
+    </table>
+
+    <h3>El mismo calendario, con descuento por equity</h3>
+    <p class="small">Si el cliente opta por ceder participación <a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#equity">(Sección 06)</a>, el descuento se aplica proporcionalmente a cada pago:</p>
+    <table>
+      <thead><tr><th>Fase</th><th class="num">Sin equity</th><th class="num">Con 15%</th><th class="num">Con 25%</th></tr></thead>
+      <tbody>
+        <tr><td>Fase 0</td><td class="num">$25,000</td><td class="num">$21,250</td><td class="num">$18,750</td></tr>
+        <tr><td>Fase 1</td><td class="num">$75,000</td><td class="num">$63,750</td><td class="num">$56,250</td></tr>
+        <tr><td>Fase 2</td><td class="num">$25,000</td><td class="num">$21,250</td><td class="num">$18,750</td></tr>
+        <tr><td>Fase 3A</td><td class="num">$50,000</td><td class="num">$42,500</td><td class="num">$37,500</td></tr>
+        <tr><td>Fase 3B</td><td class="num">$75,000</td><td class="num">$63,750</td><td class="num">$56,250</td></tr>
+        <tr><td>Fase 4</td><td class="num">$75,000</td><td class="num">$63,750</td><td class="num">$56,250</td></tr>
+        <tr class="total"><td>Total</td><td class="num">$325,000</td><td class="num">$276,250</td><td class="num">$243,750</td></tr>
+      </tbody>
+      <caption>La Fase 0 se paga completa al firmar; de la Fase 1 en adelante, 50% al inicio y 50% contra entrega.</caption>
+    </table>
+
+    <h3>Forma de trabajo</h3>
+    <div class="grid g2">
+      <div class="card">
+        <h4 style="margin-top:0">Ritmo</h4>
+        <ul class="small" style="margin-bottom:0">
+          <li>Sprints de dos semanas con demo funcional al cierre de cada uno.</li>
+          <li>Junta semanal de avance de 30 minutos con el cliente.</li>
+          <li>Reporte quincenal de avance contra el plan de la fase.</li>
+          <li>Canal compartido de comunicación con respuesta en horario hábil de México.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4 style="margin-top:0">Control de cambios</h4>
+        <ul class="small" style="margin-bottom:0">
+          <li>El alcance de cada fase se congela al inicio de la misma.</li>
+          <li>Los cambios solicitados se cotizan por escrito antes de ejecutarse.</li>
+          <li>Los ajustes menores dentro del alcance acordado no tienen costo.</li>
+          <li>Todo cambio que agregue alcance se cotiza en bloques de 2 semanas a $25,000 MXN.</li>
+          <li>Decisión formal de continuar (<em>go / no-go</em>) al cierre de cada fase.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Garantía y soporte</h3>
+    <ul>
+      <li><strong>90 días de garantía</strong> sobre defectos posteriores a la entrega de cada fase, sin costo.</li>
+      <li><strong>Soporte y mantenimiento posterior</strong> disponible por contrato aparte, desde <strong>$12,000 MXN mensuales</strong>, con tarifa preferente si el cliente eligió una opción con participación accionaria.</li>
+      <li><strong>Transferencia de conocimiento y documentación técnica</strong> al cierre de la Fase 4, para que el cliente pueda continuar con otro proveedor si así lo decide.</li>
+      <li><strong>Código fuente en un repositorio del cliente desde la Fase 1</strong>, con acceso completo en todo momento.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SUPUESTOS ============ -->
+<section id="supuestos">
+  <div class="wrap">
+    <span class="eyebrow">09 · Supuestos, riesgos y exclusiones</span>
+    <h2>Lo que sostiene estas cifras</h2>
+    <p class="lede">Un calendario de 26 semanas a precio cerrado descansa sobre condiciones concretas. Aquí están, junto con los riesgos que veo y lo que se hace con cada uno.</p>
+
+    <h3>Supuestos</h3>
+    <div class="grid g2">
+      <div class="card">
+        <ul class="small" style="margin:0 0 0 18px">
+          <li>La identidad de marca y el naming ya desarrollados se aprueban en la Fase 0 y no se rediseñan. Si el cliente aporta una identidad propia, se entrega cerrada al cierre de la semana 1.</li>
+          <li>El cliente entrega los hallazgos de su investigación de mercado <strong>al cierre de la semana 1</strong>, como se define en la Fase 0.</li>
+          <li>El cliente designa a <strong>una sola persona con autoridad</strong> para aprobar entregables, con respuesta en un máximo de 3 días hábiles.</li>
+          <li>El proveedor de Go-To-Market entrega su plan al cierre de la Fase 0.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <ul class="small" style="margin:0 0 0 18px">
+          <li>Las cuentas de App Store, Google Play, nube y pasarela de pago se abren a nombre del cliente.</li>
+          <li>Un solo idioma —español mexicano— en el alcance de las Fases 0 a 4.</li>
+          <li>El precio de <strong>$25,000 MXN por bloque de 2 semanas</strong> se mantiene fijo durante los 12 meses posteriores a la firma.</li>
+          <li>Las fases se ejecutan de forma consecutiva, sin pausas prolongadas entre una y otra.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small"><strong>Sobre las aprobaciones:</strong> con un solo desarrollador y fases de 2 a 6 semanas, una aprobación que tarda diez días desplaza el calendario completo. Es el supuesto que más impacto tiene en la fecha de lanzamiento.</p>
+
+    <h3>Riesgos principales</h3>
+
+    <div class="callout" style="margin-bottom:18px">
+      <h4 style="margin:0 0 8px;font-size:1.05rem">1 · Dependencia de una sola persona</h4>
+      <p class="small" style="margin:0 0 10px">Es el riesgo estructural de este modelo y conviene nombrarlo sin rodeos: si yo no estoy disponible, el proyecto se detiene. Un equipo de seis personas absorbe una ausencia; una persona no. A cambio de ese riesgo, el proyecto cuesta una fracción de lo que costaría con agencia y avanza sin fricción de coordinación.</p>
+      <p class="small" style="margin:0 0 6px"><strong>Qué lo mitiga, desde el primer día:</strong></p>
+      <ul class="small" style="margin:0 0 0 18px">
+        <li><strong>El código vive en un repositorio del cliente desde la Fase 1</strong>, con acceso completo y permanente. Nada queda en una máquina a la que ustedes no entren.</li>
+        <li><strong>La propiedad intelectual es del cliente desde el día uno</strong>, sin importar el estado de pago o de la participación accionaria.</li>
+        <li><strong>Documentación técnica al cierre de cada fase</strong>, no solo al final: decisiones de arquitectura, dependencias y cómo desplegar.</li>
+        <li><strong>Sin dependencias propietarias.</strong> Tecnologías estándar y ampliamente conocidas, para que cualquier desarrollador competente pueda continuar.</li>
+        <li><strong>Salida limpia en cualquier fase.</strong> El proyecto se puede transferir a otro proveedor al cierre de cualquier fase sin penalización ni pérdida de trabajo.</li>
+      </ul>
+    </div>
+
+    <div class="grid g2">
+      <div class="card">
+        <h4 style="margin-top:0;font-size:1rem">2 · Rechazo o demora en tiendas de aplicaciones</h4>
+        <p class="small" style="margin:0">El lanzamiento de la semana 9 depende de la revisión de Apple y Google, que no controlo. Un rechazo por avisos de privacidad o por permisos de ubicación puede costar de una a dos semanas.<br><strong>Mitigación:</strong> envío con holgura, avisos legales y textos de permisos listos desde la Fase 1, y cuentas de desarrollador creadas y verificadas en la Fase 0.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top:0;font-size:1rem">3 · Dependencia del rastreador de terceros</h4>
+        <p class="small" style="margin:0">El rastreo 24/7 depende de un fabricante externo que podría cambiar su API, su precio o descontinuar el producto.<br><strong>Mitigación:</strong> la integración se construye como adaptador, de modo que sumar o sustituir una marca no obliga a rehacer la app. El rastreo del paseo, que es la función más usada, no depende de ningún hardware.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top:0;font-size:1rem">4 · Margen del plan de datos SIM</h4>
+        <p class="small" style="margin:0">El plan de datos del rastreador es un costo recurrente que puede erosionar el margen de la suscripción de $79–$149 MXN si lo absorbe Guau Guau.<br><strong>Mitigación:</strong> la decisión se resuelve en la Fase 0, con la investigación de mercado midiendo la disposición a pagar por cada esquema. El detalle está en la <a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#fases">Fase 3A</a>.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top:0;font-size:1rem">5 · Liquidez del marketplace</h4>
+        <p class="small" style="margin:0">Sin suficientes paseadores verificados, la demanda no encuentra oferta y el módulo no genera ingresos.<br><strong>Mitigación:</strong> el reclutamiento de los primeros proveedores arranca en la Fase 3B como responsabilidad del cliente, y la app pública desde la semana 9 sirve para captarlos antes de que el marketplace exista.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top:0;font-size:1rem">6 · Cumplimiento de datos personales</h4>
+        <p class="small" style="margin:0">Guau Guau maneja ubicación en tiempo real y fotos familiares que pueden incluir menores. La LFPDPPP y las políticas de las tiendas son estrictas en ambos puntos.<br><strong>Mitigación:</strong> revisión legal en la Fase 0, consentimiento explícito para ubicación, y avisos de privacidad redactados antes del lanzamiento de la semana 9. La asesoría legal la contrata el cliente.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top:0;font-size:1rem">7 · Costo de adquisición de usuarios</h4>
+        <p class="small" style="margin:0">La construcción de audiencia depende del proveedor externo de Go-To-Market, que aún no entrega su plan ni su presupuesto.<br><strong>Mitigación:</strong> instrumentación analítica y atribución de campañas desde la Fase 2, para que cada peso invertido en publicidad sea medible desde el primer día.</p>
+      </div>
+    </div>
+
+    <h3>Exclusiones</h3>
+    <p>No forman parte de los $325,000 y requieren presupuesto o proveedor propio <a href="file:///Users/joshnorthcott/Library/Application%20Support/Claude/local-agent-mode-sessions/9966c7f2-e7e9-4b40-aebd-82328c09ed94/7c952d33-1a1a-4474-93e0-d2f20d3c63dc/local_260080a7-3c0d-49ba-9b94-7851eed17a26/outputs/Propuesta_GuauGuau_Desarrollo_v1.html#equipo">(ver Sección 04)</a>:</p>
+    <div class="grid g2">
+      <div class="card">
+        <ul class="small" style="margin:0 0 0 18px">
+          <li>Estrategia, ejecución y presupuesto de marketing.</li>
+          <li>Infraestructura en la nube y servicios de terceros, pagados directamente por el cliente.</li>
+          <li>Asesoría legal y fiscal: avisos de privacidad, términos, constitución y facturación.</li>
+          <li>Contenido editorial, fotografía y video de producción.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <ul class="small" style="margin:0 0 0 18px">
+          <li>Compra de los rastreadores GPS, que corre por cuenta de cada usuario final.</li>
+          <li>Desarrollo o producción de un collar propio, contemplado en la Fase 5.</li>
+          <li>Contratación y nómina del equipo operativo: soporte, moderación y ventas.</li>
+          <li>Idiomas adicionales al español mexicano.</li>
+          <li>IVA y cualquier impuesto o retención aplicable.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIGUIENTES PASOS ============ -->
+<section id="siguientes">
+  <div class="wrap">
+    <span class="eyebrow">10 · Siguientes pasos</span>
+    <h2>Cómo avanzamos</h2>
+    <div class="timeline">
+      <div class="tl-item"><b>1. Revisión conjunta</b><span>Sesión de 60 minutos para recorrer alcance, cifras y estructura de participación.</span></div>
+      <div class="tl-item"><b>2. Elección de estructura de pago</b><span>El cliente decide qué porcentaje de participación, si alguno, sustituye parte del pago.</span></div>
+      <div class="tl-item"><b>3. Integración del Go-To-Market</b><span>El proveedor externo entrega su propuesta y se incorpora a la Sección 07.</span></div>
+      <div class="tl-item"><b>4. Contrato</b><span>Se formalizan precio por fase, hitos de pago, vesting de la participación, propiedad intelectual y confidencialidad.</span></div>
+      <div class="tl-item"><b>5. Arranque de la Fase 0</b><span>Inicio dentro de los 10 días hábiles posteriores a la firma.</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h3>Guau Guau — Tu mejor amigo, en una sola app</h3>
+    <p style="max-width:70ch;opacity:.85">Documento confidencial preparado para Ana Herrera, Suemi González y Angie Padilla. Los precios por fase son firmes durante la vigencia de esta propuesta y se formalizan en un contrato posterior. Vigencia de 30 días naturales a partir de la fecha de emisión. Todos los montos en pesos mexicanos, antes de IVA.</p>
+    <p style="margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,.25);max-width:70ch;opacity:.85">
+      <strong style="color:var(--amarillo)">¿Dudas o comentarios?</strong><br>
+      Josh Northcott · Horizon Tech<br>
+      <a href="mailto:joshnorthcott2@gmail.com">joshnorthcott2@gmail.com</a>
+    </p>
+    <p style="margin-top:28px;font-size:.78rem;opacity:.6">
+      v1.0 · 4 de agosto de 2026 · <a href="https://www.horizontech.com.mx/" style="color:var(--azul-medio)">Horizon Tech</a><br>
+      Enlace privado y temporal, no indexado y sin acceso desde el sitio público. Se retira al vencer la vigencia.
+    </p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var NAV_H = 64;
+
+  // Encuentra el contenedor que realmente hace scroll. Si la página va dentro
+  // de un wrapper del sitio, window puede no ser quien desplaza.
+  function scroller(el) {
+    var n = el.parentElement;
+    while (n && n !== document.body) {
+      var s = getComputedStyle(n);
+      if (/(auto|scroll|overlay)/.test(s.overflowY) && n.scrollHeight > n.clientHeight) return n;
+      n = n.parentElement;
+    }
+    return null;
+  }
+
+  function goTo(target) {
+    var box = scroller(target);
+    if (box) {
+      var top = target.getBoundingClientRect().top - box.getBoundingClientRect().top + box.scrollTop - NAV_H;
+      box.scrollTo({ top: top, behavior: 'smooth' });
+    } else {
+      var y = target.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop) - NAV_H;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  }
+
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) return;
+    var target = document.getElementById(id);
+    if (!target) return;
+    e.preventDefault();
+    goTo(target);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }, false);
+})();
+</script>
+
+
+
+</body></html>
