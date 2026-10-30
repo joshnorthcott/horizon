@@ -242,17 +242,13 @@ details[open] .faq-plus{transform:rotate(45deg)}
         <h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: clamp(32px, 4vw, 48px); letter-spacing: -0.02em; line-height: 1.1">Let’s talk about your idea.</h2>
         <p style="margin: 0; color: #B7B5CA">Book a free 30-minute call. You’ll leave with clear next steps, whether or not we work together.</p>
         <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 12px; font-size: 16px">
-          <a href="mailto:josh@horizontech.com.mx" style="text-decoration: none">josh@horizontech.com.mx</a>
-          <a href="tel:+529993355302" style="text-decoration: none">+52 999 335 5302</a>
+          <a href="https://wa.me/529993355302" style="text-decoration: none">WhatsApp +52 999 335 5302</a>
           <span style="color: #8E8CA3">Mérida, Yucatán, México</span>
         </div>
       </div>
-      <form action="https://formsubmit.co/josh@horizontech.com.mx" method="POST" style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px; padding: 36px; border: 1px solid #2E2A55; border-radius: 20px; background: #110F22">
+      <form id="contact-form" style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px; padding: 36px; border: 1px solid #2E2A55; border-radius: 20px; background: #110F22">
         <label for="c-name" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #B7B5CA">Your name
-          <input type="hidden" name="_subject" value="New enquiry from horizontech.com.mx"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"><input id="c-name" name="name" type="text" required autocomplete="name" style="min-height: 48px; padding: 0 16px; border-radius: 12px; border: 1px solid #2A2A3C; background: #0A0A0F; color: #F4F3FA; font: inherit; font-size: 16px">
-        </label>
-        <label for="c-email" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #B7B5CA">Email
-          <input id="c-email" name="email" type="email" required autocomplete="email" style="min-height: 48px; padding: 0 16px; border-radius: 12px; border: 1px solid #2A2A3C; background: #0A0A0F; color: #F4F3FA; font: inherit; font-size: 16px">
+          <input id="c-name" name="name" type="text" required autocomplete="name" style="min-height: 48px; padding: 0 16px; border-radius: 12px; border: 1px solid #2A2A3C; background: #0A0A0F; color: #F4F3FA; font: inherit; font-size: 16px">
         </label>
         <label for="c-need" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #B7B5CA">I’m interested in
           <select id="c-need" name="interest" style="min-height: 48px; padding: 0 12px; border-radius: 12px; border: 1px solid #2A2A3C; background: #0A0A0F; color: #F4F3FA; font: inherit; font-size: 16px">
@@ -264,8 +260,8 @@ details[open] .faq-plus{transform:rotate(45deg)}
         <label for="c-msg" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #B7B5CA">Tell us a little about it
           <textarea id="c-msg" name="message" rows="4" style="padding: 12px 16px; border-radius: 12px; border: 1px solid #2A2A3C; background: #0A0A0F; color: #F4F3FA; font: inherit; font-size: 16px; resize: vertical"></textarea>
         </label>
-        <button type="submit" style="min-height: 52px; border: 0; border-radius: 999px; background: #8B7CF6; color: #0A0A0F; font: inherit; font-weight: 600; cursor: pointer">Send message</button>
-        <p style="margin: 0; font-size: 13px; color: #8E8CA3">By sending this form you agree to our <a href="/privacy.html">Privacy Policy</a>.</p>
+        <button type="submit" style="min-height: 52px; border: 0; border-radius: 999px; background: #8B7CF6; color: #0A0A0F; font: inherit; font-weight: 600; cursor: pointer">Send via WhatsApp</button>
+        <p style="margin: 0; font-size: 13px; color: #8E8CA3">This opens WhatsApp with your message ready to send. By sending it you agree to our <a href="/privacy.html">Privacy Policy</a>.</p>
       </form>
     </div>
   </section>
@@ -281,5 +277,21 @@ details[open] .faq-plus{transform:rotate(45deg)}
     </div>
   </footer>
 </div>
+<script>
+(function () {
+  var form = document.getElementById('contact-form');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = document.getElementById('c-name').value.trim();
+    var need = document.getElementById('c-need').value;
+    var msg = document.getElementById('c-msg').value.trim();
+    var text = 'Hi Horizon! I'm ' + name + '.\nInterested in: ' + need + (msg ? '\n\n' + msg : '');
+    var url = 'https://wa.me/529993355302?text=' + encodeURIComponent(text);
+    var win = window.open(url, '_blank');
+    if (!win) window.location.href = url;
+  });
+})();
+</script>
 </body>
 </html>
