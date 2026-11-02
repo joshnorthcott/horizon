@@ -286,7 +286,7 @@ details[open] .faq-plus{transform:rotate(45deg)}
     var name = document.getElementById('c-name').value.trim();
     var need = document.getElementById('c-need').value;
     var msg = document.getElementById('c-msg').value.trim();
-    var text = 'Hi Horizon! I'm ' + name + '.\nInterested in: ' + need + (msg ? '\n\n' + msg : '');
+    var text = 'Hi Horizon! I\'m ' + name + '.\nInterested in: ' + need + (msg ? '\n\n' + msg : '');
     var url = 'https://wa.me/529993355302?text=' + encodeURIComponent(text);
     var win = window.open(url, '_blank');
     if (!win) window.location.href = url;
